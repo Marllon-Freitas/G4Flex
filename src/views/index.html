@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="author" content="Marllon Freitas">
+  <meta name="description" content="A missão da G4Flex é oferecer serviços e soluções de telecomunicações, adequados as necessidades de desenvolvimento do mercado corporativo, com compromisso da presteza e excelência, buscando sempre a inovação tecnológica, assegurando lucratividade aos seus sócios e colaboradores.">
+  <meta name="keywords" content="G4Flex, Watson, Salesforce, Telecom">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!--Fonts-->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;500;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap" rel="stylesheet">
+  <!--Icons-->
+  <link rel="shortcut icon" href="/public/assets/g4flexiconblack.svg" type="image/x-icon">
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+  <!--CSS-->
+  <link rel="stylesheet" href="/public/css/global.css">
+  <link rel="stylesheet" href="/public/css/animations.css">
+  <link rel="stylesheet" href="/public/css/main-content.css">
+  <link rel="stylesheet" href="/public/css/responsive.css">
+  <title>G4Flex - Business and Services</title>
+</head>
+<body>
+    <!--Back to top button-->
+      <a href="#home" class="back-to-top" id="back-to-top" title="De volta ao topo da página" >
+        <img src="/public/assets/backtothetoparrow.svg" alt="Seta para voltar ao inicio da página">
+      </a>
+    <!--Back to top button-->
+
+    <!--Dark Mode toggle-->
+    <div class="toggle" id="dark-mode-toggle" title="Trocar Tema">
+      <input id="switch" type="checkbox" name="theme">
+      <label class="label" for="switch">
+        <i class="far fa-moon"></i>
+      </label>
+    </div>
+    <!--Dark Mode toggle end-->
+
+    <!--Menu-top-->
+    <header id="header" class="animate-appear">
+      <nav id="nav">
+        <div class="menu-wrap">
+            <a href="#home" onclick="closeMenu()">
+                <div class="logo">
+                    <img src="/public/images/g4flex-logo.png" alt="Logo da G4Flex">
+                </div>
+            </a>
+            <!--button mobile-->
+            <button aria-label="Abrir Menu" id="btn-mobile" aria-haspopup="true" aria-controls="menu" aria-expanded="false">
+              <span id="hamburger"></span>
+            </button>
+            <ul class="menu">
+              <li onclick="closeMenu()">
+                <a href="#home" >
+                  <div class="menu-item active">
+                      Home
+                  </div>
+                </a>
+              </li>
+              <li onclick="closeMenu()">
+                <a href="#services">
+                  <div class="menu-item">
+                      Serviços
+                  </div>
+                </a>
+              </li>
+              <li onclick="closeMenu()">
+                <a href="#about">
+                  <div class="menu-item">
+                      Sobre a G4
+                  </div>
+                </a>
+              </li>
+              <li onclick="closeMenu()">
+                <a href="#cases">
+                  <div class="menu-item">
+                      Cases
+                  </div>
+                </a>
+              </li>
+              <li onclick="closeMenu()">
+                <a href="http://www.g4flex.com.br/community/index.html" target="_blank">
+                  <div class="menu-item">
+                      Community
+                  </div>
+                </a>
+              </li>
+              <li onclick="closeMenu()">
+                <a href="http://www.g4flex.com.br/eventos/index.html" target="_blank">
+                  <div class="menu-item">
+                      Eventos
+                  </div>
+                </a>
+              </li>
+              <li onclick="closeMenu()">
+                <a href="http://www.g4flex.com.br/academy/index.html" target="_blank">
+                  <div class="menu-item">
+                      G4Flex Academy
+                  </div>
+                </a>
+              </li>
+              <li onclick="closeMenu()">
+                <a href="#contact">
+                  <div class="menu-item">
+                      Contato
+                  </div>
+                </a>
+              </li>
+            </ul>
+        </div>
+      </nav>
+    </header>
+    <!--Menu-top end-->
+
+  <!--Main-content-->
+  <main id="main">
+    <section id="home">
+
+      <div class="arrow-controls">
+        <span>
+          <img src="/public/assets/passpagearrow.svg" class="right-arrow" tittle="Pule para o próximo slide" alt="seta que passa ao próximo slide" onclick="returnSlideImg();returnSlideText();">
+        </span>
+        <span>
+          <img src="/public/assets/passpagearrow.svg" tittle="Pule para o próximo slide" alt="seta que passa ao próximo slide" onclick="passSlideImg();passSlideText();">
+        </span>
+      </div>
+
+      <div class="welcome">
+        <div class="welcome-texts animate-right">
+          <div class="initial-text active-text-slide">
+            <img src="/public/images/g4flex-logo.png" alt="Logo da G4Flex">
+            <h1 class="animate-right-delay">Bem vinde a <span>G4Flex</span></h1>
+          </div>
+
+          <div class="initial-text">
+            <h1 class="animate-right-delay">Somos Flexíveis</h1>
+            <p>
+              ENGENHEIROS, DESENVOLVEDORES E ADMINISTRADORES
+  
+              ENGAJADOS, COM FOCO NOS PRODUTOS,
+              
+              NA FLEXIBILIDADE COM OS CLIENTES
+              
+              E NOS RESULTADOS OPERACIONAIS DA EMPRESA,
+              
+              TEM SIDO UMA DE NOSSAS MAIORES CONQUISTAS E ORGULHO
+            </p>
+          </div>
+
+          <div class="initial-text">
+            <h1 class="animate-right-delay">Criamos a sua Solução</h1>
+            <p>
+              UM DOS PRINCIPAIS DIFERENCIAIS DA G4FLEX
+  
+              É SEU PODER DE CUSTOMIZAR SOLUÇÕES,
+  
+              ATRAVÉS DA INTEGRAÇÃO COM SISTEMAS LEGADOS
+  
+              E SISTEMAS DE GOVERNANÇA CORPORATIVA
+            </p>
+          </div>
+        </div>
+
+        <div class="welcome-images">
+          <img src="/public/images/undraw_Development_re_g5hq.svg" alt="" class="active-image-slide">
+          <img src="/public/images/undraw_connected_world_wuay.svg" alt="">
+          <img src="/public/images/undraw_predictive_analytics_kf9n.svg" alt="">
+        </div>
+      </div>
+    </section>
+
+    <section id="services">
+      <div class="with-us">
+        <h2>Tecnologia para Negócios Inteligentes.</h2>
+        <p>
+          A G4Flex proporciona inteligência competitiva aos negócios corporativos. Escolha um de nossos produtos, que nós customizamos de acordo com seu modelo de negócio
+        </p>
+        <hr>
+      </div>
+      <div class="container-items-services animate-up">
+        <div class="services-item">
+          <img src="/public/assets/FlexSMS.svg" alt="FlexSMS">
+          <h3>FlexSMS</h3>
+          <span>
+            <p>
+              Sistema para envio de mensagens corporativas personalizadas para colaboradores ou clientes de sua empresa
+            </p>
+          </span>
+        </div>
+        <div class="services-item">
+          <img src="/public/assets/FlexUC.svg" alt="FlexUC">
+          <h3>FlexUC</h3>
+          <p>
+            Plataforma completa para gerenciamento de CallCenters como monitoramento de PBX-IP, Agentes, Filas, Ramais, Troncos e muito mais
+          </p>
+        </div>
+        <div class="services-item">
+          <img src="/public/assets/salesforce.svg" alt="Salesforce Partner">
+          <h3>Salesforce Partner</h3>
+          <p>
+            Plataforma de CRM Nº1 do mundo baseado em nuvem, para o gerenciamento de relacionamento com o cliente
+          </p>
+        </div>
+        <div class="services-item">
+          <img src="/public/assets/voip.svg" alt="Voip">
+          <h3>VoIP</h3>
+          <p>
+            Transforme sua empresa em sua própria operadora de telefonia, fazendo uso da internet, o custo das ligações é significativamente inferior ao cobrado pelas empresas de telefonia convencionais
+          </p>
+        </div>
+        <div class="services-item">
+          <img src="/public/assets/FlexInquiry.svg" alt="FlexInquiry">
+          <h3>FlexInquiry</h3>
+          <p>
+            Plataforma para relatórios de pesquisa de satisfação e qualidade de atendimento dos agentes para com os clientes
+          </p>
+        </div>
+        <div class="services-item">
+          <img src="/public/assets/FlexBilling.svg" alt="FlexBilling">
+          <h3>FlexBilling</h3>
+          <p>
+            Sistema de relatórios de faturas de ligações da organização, promove toda a informação necessária para o controle de custos telefônicos
+          </p>
+        </div>
+        <div class="services-item ibm-text">
+          <img src="/public/assets/ibm-business-partner.svg" alt="IBM Business Partner" class="ibm">
+          <h3>IBM Partner</h3>
+          <p>
+            A G4Flex agora está com uma parceria de sucesso com a gigante americana IBM.
+          </p>
+        </div>
+        <div class="services-item">
+          <img src="/public/assets/networkdesign.svg" alt="Network Design">
+          <h3>Network Design</h3>
+          <p>
+            Projetos e análises de infraestrutura de redes.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section id="about">
+      <div class="container">
+        <div class="about-section">
+          <h2>Sobre a G4Flex</h2>
+          <p>
+            Fundada em 2008, a G4Flex nasceu após anos de atuação dos seus principais gestores, como colaboradores de empresas de telecomunicações tais como: Telemar, AT&T Latin America, Telmex, Embratel e Anatel, assim como empresas de desenvolvimento de Software. Expandir o conceito de prestação de serviços de telefonia, possibilitando inteligência competitiva aos clientes é o maior desafio e ao mesmo tempo uma marca da empresa.
+          </p>
+
+          <h3>Nossa Missão</h3>
+          <p>
+            A missão da G4Flex é oferecer serviços e soluções de telecomunicações, adequados as necessidades de desenvolvimento do mercado corporativo, com compromisso da presteza e excelência, buscando sempre a inovação tecnológica, assegurando lucratividade aos seus sócios e colaboradores.
+          </p>
+
+          <h3>Nossa Visão</h3>
+          <p>
+            Consolidar-se como provedor de serviços de telecomunicações, com ênfase em telefonia IP e comunicações unificadas, buscando geração de valor para os clientes, sócios e colaboradores, através da constante aplicação de inovação com foco em sustentabilidade.
+          </p>
+
+          <h3>Nossos valores</h3>
+          <p>
+            Ética, transparência, comprometimento, colaboração, flexibilidade, inovação e sustentabilidade. 
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section id="cases">
+      <div class="with-us">
+        <h2>Empresas que trabalham conosoco!</h2>
+        <p>
+          Estas são algumas das empresas que usufruem de nossos serviços e sistemas
+        </p>
+        <hr>
+      </div>
+      <div class="container-items-case">
+        <div class="case-item">
+          <img src="/public/images/beachs.png" title="Beach Park" alt="Beach Park">
+        </div>
+        <div class="case-item">
+          <img src="/public/images/pm.jpg" title="Pague Menos" alt="Pague Menos">
+        </div>
+        <div class="case-item">
+          <img src="/public/images/coracoes3.png" title="Três Corações" alt="Três Corações">
+        </div>
+        <div class="case-item">
+          <img src="/public/images/csp1.jpg" title="Companhia Siderúrgica de Pecém" alt="Companhia Siderúrgica de Pecém">
+        </div>
+        <div class="case-item">
+          <img src="/public/images/geq.jpg" title="Grupo Edison Queiroz" alt="Grupo Edison Queiroz">
+        </div>
+        <div class="case-item">
+          <img src="/public/images/guanabara.png" title="Guanabara" alt="Guanabara">
+        </div>
+        <div class="case-item">
+          <img src="/public/images/liber.png" title="Unicard" alt="Unicard">
+        </div>
+        <div class="case-item">
+          <img src="/public/images/princes.png" title="Princesa" alt="Princesa">
+        </div>
+        <div class="case-item">
+          <img src="/public/images/mdias.png" title="M.Dias Branco" alt="M.Dias Branco">
+        </div>
+        <div class="case-item">
+          <img src="/public/images/unisobral.png" title="Unisobral" alt="Unisobral">
+        </div>
+        <div class="case-item">
+          <img src="/public/images/unimed-ceara.png" title="Unimed Ceará" alt="Unimed Ceará">
+        </div>
+        <div class="case-item">
+          <img src="/public/images/unimed.png" title="Unimed" alt="Unimed">
+        </div>
+      </div>
+    </section>
+
+    <section id="contact">
+      <div class="with-us">
+        <h2>Entre em contato!</h2>
+        <p>
+          Fale Conosco através do formulário abaixo!
+        </p>
+        <hr>
+      </div>
+      <div class="contact-us">
+        <form action="" class="contact-form">
+          <div class="form-row">
+            <div class="form-group">
+              <label for="seuNome">Nome:</label>
+              <input type="text" id="seuNome" name="seuNome" required>
+            </div>
+  
+            <div class="form-group">
+              <label for="seuNumero">Número:</label>
+              <input type="text" id="seuNumero" name="seuNumero" required>
+            </div>  
+          </div>
+
+          <div class="form-row">
+            <div class="form-group">
+              <label for="email">E-mail:</label>
+              <input type="email" id="email" name="email" required>
+            </div>
+  
+            <div class="form-group">
+              <label for="empresa">Empresa:</label>
+              <input type="text" id="empresa" name="empresa" required>
+            </div>
+          </div>
+
+          <div class="form-row">
+            <div class="form-group">
+              <label for="mensagem">Mensagem:</label>
+              <textarea name="mensagem" id="mensagem" cols="30" rows="10" required></textarea>
+            </div>
+          </div>
+          <div class="button-form">
+            <button type="submit">
+              <span>Enviar</span>
+            </button>
+          </div>
+        </form>
+      </div>
+    </section>
+
+    <!--footer-->
+    <footer class="footer">
+      <div class="footer-content">
+        <div class="row">
+          <div class="footer-col centro">
+            <h4>G4Flex</h4>
+            <ul>
+              <li><a href="#about">Sobre</a></li>
+              <li><a href="#services">Nossos Serviços</a></li>
+              <li><a href="#cases">Empresas que confiam nos nossos serviços</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h4 class="centro">Fale conosco!</h4>
+            <ul>
+              <li><a href="#contact">Nós mande uma mensagem!</a></li>
+              <li><p tittle="Encontre a gente no Google Maps!">Endereço:<a href="https://www.google.com/maps/place/Av.+Coronel+Miguel+Dias,+50+-+Patriolino+Ribeiro,+Fortaleza+-+CE,+60810-160/@-3.7584035,-38.4887949,196m/data=!3m1!1e3!4m5!3m4!1s0x7c748a6f1425787:0x34bed480079ec3e6!8m2!3d-3.7583893!4d-38.4884828?hl=pt-br" target="_blank">Av. Coronel Miguel Dias, 50</a> </p></li>
+              <li><p>Número: (85) 3033.1777</p></li>
+              <li><p>Email: comercial@g4flex.com.br</p></li>
+              <li><p>Website: <a href="https://www.g4flex.com.br">www.g4flex.com.br</a></p></li>
+              <li><p>Whats App Comercial: <a href="https://api.whatsapp.com/send?phone=558530331786&text=Ol%c3%a1,%20seja%20bem%20vindo%20a%20um%20dos%20novos%20canais%20de%20comunicac%c3%a3o%20da%20G4Flex.%20No%20que%20podemos%20te%20ajudar?">(85) 3033.1786</a></p></li>
+            </ul>
+          </div>
+          <div class="footer-col centro">
+            <h4>Encontre a gente!</h4>
+            <div class="social-links">
+              <a href="https://www.facebook.com/G4Flex?rf=208124995886097&filter=1" title="Facebook da empresa!"  target="_blank"><i class="fab fa-facebook-f" ></i></a>
+              <a href="https://www.linkedin.com/company/g4flex/" title="Linkedin da empresa!" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+              <a href="https://www.instagram.com/g4flex_oficial/" title="Instagram da empresa!" target="_blank" ><i class="fab fa-instagram"></i></a>
+              <a href="#" title="Estamos trabalhando nisso!"><i class="fab fa-twitter" title="Estamos trabalhando nisso!"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>
+          © powered by G4Flex - Business and Services.
+        </p>
+      </div>
+    </footer>
+    <!--footer end-->
+  </main>
+  <!--Main-content end-->
+
+  <!--JavaScript-->
+  <script src="/public/js/index.js"></script>
+</body>
+</html>
