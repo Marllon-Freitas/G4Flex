@@ -72,7 +72,6 @@
 /*home section*/
 section#home {
   padding-top: calc(var(--header-height) - 1.1rem);
-  width: 100%;
   min-height: 100vh;
   background-color: var(--white);
   display: flex;
