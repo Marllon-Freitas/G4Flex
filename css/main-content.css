@@ -2,11 +2,12 @@
 #header {
   z-index: 1000;
   position: fixed;
-  width: 100%;
+  width: 100vw;
   display: flex;
   align-items: center;
   justify-content: space-between;
   height: var(--header-height);
+  top: 0;
 }
 
 #nav {
@@ -70,7 +71,7 @@
 
 /*home section*/
 section#home {
-  padding-top: var(--header-height);
+  padding-top: calc(var(--header-height) - 1.1rem);
   width: 100%;
   min-height: 100vh;
   background-color: var(--white);
@@ -355,6 +356,7 @@ section#cases {
 }
 
 .with-us hr {
+  margin-top: 0.4rem;
   height: 0.3rem;
   border: none;
   background-color: var(--primary-color);
@@ -386,6 +388,26 @@ section#cases {
 }
 
 /*cases section end*/
+
+
+
+
+
+
+
+
+
+/*section location*/
+section#location {
+  width: 100%;
+  height: 100%;
+  padding-top: var(--header-height);
+}
+
+.map iframe{
+  width: 100vw;
+}
+/*section location end*/
 
 
 
@@ -533,6 +555,7 @@ form.contact-form .form-group label {
 .toggle {
   width: fit-content;
   height: fit-content;
+
 }
 
 input[type=checkbox]{
@@ -552,7 +575,7 @@ input[type=checkbox]{
   align-items: center;
   justify-content: center;
   padding: 0.5rem;
-  z-index: 100;
+  z-index: 1000000;
   border: none;
 }
 
@@ -574,13 +597,13 @@ input[type=checkbox]{
   width: 3.7rem;
   height: 3.7rem;
   position: fixed;
+  display: flex;
   border-radius: 100%;
   background-color: var(--primary-color);
   color: var(--text-color);
   align-items: center;
   justify-content: center;
-  padding: 0.5rem;
-  z-index: 1000;
+  z-index: 100000;
   transition: all ease-in-out 1s;
 }
 
@@ -589,8 +612,8 @@ input[type=checkbox]{
 }
 
 .back-to-top img {
-  width: 70%;
-  height: 70%;
+  width: 50%;
+  height: 50%;
 }
 /*back to the top button*/
 

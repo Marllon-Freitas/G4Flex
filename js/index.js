@@ -34,22 +34,6 @@ function selectMenuItem(item) {
     }
 })
 
-// back tot top
-let backToTopBtn = document.querySelector('.back-to-top')
-let toggleTheme = document.querySelector('.toggle')
-
-//verify the size of the screen and hide the 'back to the top' button when is too close to the top of the page
-window.onscroll = () => {
-    if (document.body.scrollTop > 250 || document.documentElement.scrollTop > 250) {
-        backToTopBtn.style.display = 'flex';
-        toggleTheme.style.display = 'flex';
-    } else {
-        backToTopBtn.style.display = 'none';
-        toggleTheme.style.display = 'none';
-    }
-}
-
-
 //pass the home section slide
 const containerImgs = document.querySelector(".welcome-images");
 const slide = containerImgs.getElementsByTagName("img");
