@@ -29,7 +29,7 @@ As demais imagens foram tiradas do site da própria empresa.
 
 ### Acesso
 
-O site pode ser acessado [aqui!](https://marllon-freitas.github.io/G4Flex/).
+O site pode ser acessado [aqui](https://marllon-freitas.github.io/G4Flex/).
 
 ### Implementações
 
