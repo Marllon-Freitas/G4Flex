@@ -2,11 +2,12 @@
 #header {
   z-index: 1000;
   position: fixed;
-  width: 100%;
+  width: 100vw;
   display: flex;
   align-items: center;
   justify-content: space-between;
   height: var(--header-height);
+  top: 0;
 }
 
 #nav {
@@ -70,7 +71,7 @@
 
 /*home section*/
 section#home {
-  padding-top: var(--header-height);
+  padding-top: calc(var(--header-height) - 1.1rem);
   width: 100%;
   min-height: 100vh;
   background-color: var(--white);
@@ -86,7 +87,7 @@ section#home {
   top: 50vh;
   position: absolute;
   z-index: 500;
-  padding: 2rem;
+  padding: 1rem;
   width: 100vw;
   display: flex;
   justify-content: space-between;
@@ -241,13 +242,11 @@ section#services {
 .services-item h3 {
   font-size: 1.3rem;
   font-weight: 600;
-
+  color: var(--text-color-main);
   padding: 2rem 0 1rem 0;
 }
 
 .services-item p {
-  color: var(--text-color);
-
   text-align: center;
   font-size: 1.2em;
   padding-top: 2rem;
@@ -301,6 +300,7 @@ section#about {
 .about-section h2, h3 {
   text-align: center;
   padding: 2rem 0 2rem 0;
+  color: var(--primary-color);
 }  
 
 .about-section h2 {
@@ -356,6 +356,7 @@ section#cases {
 }
 
 .with-us hr {
+  margin-top: 0.4rem;
   height: 0.3rem;
   border: none;
   background-color: var(--primary-color);
@@ -396,13 +397,33 @@ section#cases {
 
 
 
+/*section location*/
+section#location {
+  width: 100%;
+  height: 100%;
+  padding-top: var(--header-height);
+}
+
+.map iframe{
+  width: 100vw;
+}
+/*section location end*/
+
+
+
+
+
+
+
+
+
 
 /*contact section*/
 section#contact {
   padding-top: calc(var(--header-height) + 5rem);
   margin-bottom: 5rem;
   width: 100%;
-  background-image: url("/public/images/undraw_contact_us_15o2.svg");
+  background-image: url("../images/undraw_contact_us_15o2.svg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: contain;
@@ -467,6 +488,11 @@ form.contact-form .form-group textarea:focus {
   border-radius: 13px;
 }
 
+form.contact-form .form-group input::placeholder,
+form.contact-form .form-group textarea::placeholder {
+  color: var(--text-color);
+}
+
 form.contact-form .form-group input:hover,
 form.contact-form .form-group textarea:hover {
   border-bottom: 3px solid var(--primary-color);
@@ -474,6 +500,7 @@ form.contact-form .form-group textarea:hover {
 
 form.contact-form .form-group textarea {
   padding: 1rem;
+  height: 5rem;
 }
 
 form.contact-form .form-group label {
@@ -524,6 +551,12 @@ form.contact-form .form-group label {
 
 /*Main content end*/
 
+/*change theme*/
+.toggle {
+  width: fit-content;
+  height: fit-content;
+
+}
 
 input[type=checkbox]{
   height: 0;
@@ -534,7 +567,7 @@ input[type=checkbox]{
 .label {
   cursor: pointer;
   top: 90vh;
-  left: 2rem;
+  left: 1.3rem;
   position: fixed;
   border-radius: 100%;
   background-color: var(--primary-color);
@@ -542,7 +575,7 @@ input[type=checkbox]{
   align-items: center;
   justify-content: center;
   padding: 0.5rem;
-  z-index: 100;
+  z-index: 1000000;
   border: none;
 }
 
@@ -550,24 +583,27 @@ input[type=checkbox]{
   visibility: hidden;
 }
 
-
+.label:hover {
+  box-shadow: 0 0.5rem 1rem var(--shadow);
+}
+/*change theme end*/
 
 
 
 /*back to the top button*/
 .back-to-top {
   bottom: 2rem;
-  right: 2rem;
-  width: 4rem;
-  height: 4rem;
+  right: 1.2rem;
+  width: 3.7rem;
+  height: 3.7rem;
   position: fixed;
+  display: flex;
   border-radius: 100%;
   background-color: var(--primary-color);
   color: var(--text-color);
   align-items: center;
   justify-content: center;
-  padding: 0.5rem;
-  z-index: 1000;
+  z-index: 100000;
   transition: all ease-in-out 1s;
 }
 
@@ -576,8 +612,8 @@ input[type=checkbox]{
 }
 
 .back-to-top img {
-  width: 70%;
-  height: 70%;
+  width: 50%;
+  height: 50%;
 }
 /*back to the top button*/
 

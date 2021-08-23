@@ -42,6 +42,7 @@
 
   .logo {
     margin-left: 2rem;
+    width: 80%;
   }
 
   .menu {
@@ -56,6 +57,7 @@
     visibility: hidden;
     overflow-y: hidden;
     transition: ease-in-out 0.7s;
+    
   }
 
   #nav.active-menu .menu {
@@ -212,7 +214,7 @@
     line-height: 1;
   }
   .initial-text p {
-    font-size: 1.5em;
+    font-size: 1.2em;
     line-height: 1.2;
     color: var(--text-color);
     text-align: center;
@@ -255,6 +257,22 @@
     padding: 7rem 0 7rem 0;
     height: max-content;
   }
+
+  .container {
+    text-align: center;
+  }
+
+  .about-section h2 {
+    font-size: 2em;
+  }
+  
+  .about-section h3 {
+    font-size: 1.7em;
+  }
+  
+  .about-section p {
+    font-size: 1.2em;
+  }
   /*about section end*/
 
   /*case section*/
@@ -285,6 +303,10 @@
   form.contact-form .form-group {
     margin: 1rem 0 1rem 0;
     padding: 1rem 0 1rem 0;  
+  }
+
+  form.contact-form .form-group textarea {
+    max-height: 15rem;
   }
 
   .contact-us {
